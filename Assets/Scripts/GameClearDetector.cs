@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class GameClearDetector : MonoBehaviour
 {
-    public GameObject holeRed;
-    public GameObject holeBlue;
-    public GameObject holeGreen;
+    public Hole holeRed;
+    public Hole holeBlue;
+    public Hole holeGreen;
 
     // Update is called once per frame
-    void OnGUI()
+    private void OnGUI()
     {
+        
         //すべてのボールが入ったらラベルを表示
-        if(holeRed.GetComponent<Hole>()&&holeBlue.GetComponent<Hole>()&&holeGreen.GetComponent<Hole>())
+        if(holeRed.IsHolding() && holeBlue.IsHolding() && holeGreen.IsHolding())
         {
             GUI.Label(new Rect(50, 50, 100, 30), "Game Clear!");
         }
