@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ballred
+  - Ballbrue
+  - Ballgreen
+  - BallRed
+  - BallBlue
+  - BallGreen
   layers:
   - Default
   - TransparentFX
